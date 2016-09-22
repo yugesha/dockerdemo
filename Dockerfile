@@ -6,7 +6,7 @@ USER root
 RUN mkdir  /EnterpriseAppsMaker && \
  mkdir  /EnterpriseAppsMaker/logs && \
  chmod 777 /EnterpriseAppsMaker/logs && \
-COPY EnrollmentComponent-1.0.jar /EnterpriseAppsMaker
+COPY Deployment/InitW1/EnrollmentComponent/appserver/EnrollmentComponent-1.0.jar /EnterpriseAppsMaker
 # Expose the http, database and administration ports
 EXPOSE 8761 9990
 # Specify container startup command
